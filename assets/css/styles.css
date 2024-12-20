@@ -207,15 +207,14 @@ section {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  padding: 50px 200px;
+  justify-content: center;
+  padding: 50px 100px;
   background-color: #D9EAFD;
 }
 
 .mission-text {
   flex: 1;
   padding: 20px;
-  margin-bottom: 50px;
 }
 
 .mission-text h2 {
