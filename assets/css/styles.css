@@ -1,0 +1,649 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: "Funnel Display", serif;
+    font-optical-sizing: auto;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+.header {
+    display: flex;
+    background-color: #153f56;
+    padding: 20px 0;
+    top: 0;
+    z-index: 1000;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.logo{
+    max-height: 50px;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.nav-list li {
+    margin-left: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color:#ffffff;
+}
+.nav a:hover {
+    text-decoration: underline;
+    color:#ffffff;
+}
+.hero {
+    background: url('../images/Hero1.jpg') center/cover no-repeat;
+    text-align: center;
+    padding: 150px 150px;
+    margin: 0px 50px 0px 50px;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    color:#ffffff;
+    margin-bottom: 10px;
+    line-height: normal;
+}
+
+.hero-text {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #153f56;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.btn:hover {
+    background-color: #051f2d;
+}
+
+/* Section Styling */
+section {
+    margin: 0px 50px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+
+.approach-section {
+    background-color: #ecc2ac;
+}
+
+#key-benefitssec{
+    background: #ee9ca7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.key-benefits-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.key-benefits-list li {
+    text-align: center;
+    max-width: 200px;
+}
+
+.product-section {
+    background-color: #ecc2ac;
+}
+
+/* Container for the product section */
+.product-section {
+    margin: 0px 50px;
+    padding : 0px 50px;
+    padding-bottom: 50px;
+}
+
+.product-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+.product-container-1{
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 50px;
+  background-color: #ffffff;
+}
+
+
+/* Image styling */
+.product-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  max-height: 300px;
+}
+
+/* Info styling */
+.product-info {
+  flex: 1;
+  padding-right: 50px;
+}
+
+.product-info h3 {
+  text-align: left;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.product-info p {
+  font-size: 1rem;
+  text-align: left;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Shop Now button styling */
+.shop-now-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.shop-now-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Mission section */
+.mission-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 200px;
+  background-color: #D9EAFD;
+}
+
+.mission-text {
+  flex: 1;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.mission-text h2 {
+  font-size: 2rem;
+  color: #000000;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.mission-text p {
+  font-size: 1rem;
+  text-align: justify;
+  color: #333;
+  line-height: 1.6;
+}
+
+.mission-image {
+  flex: 1;
+  max-width: 40%;
+  text-align: center;
+  padding: 20px;
+}
+
+.mission-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.testimonials-section {
+    background-color: #fff;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-logo {
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-nav a {
+    color: #fff;
+}
+
+.footer-nav a:hover {
+    color: #ff6600;
+}
+.mobile-nav{
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+    }
+
+    .header .container{
+        display: flex;
+        justify-content: space-around;
+        align-items: center; 
+    }
+
+    .hero{
+        padding: 50px;
+        margin: 0px;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+    }
+
+    #our-approach{
+        padding: 20px;
+    }
+
+    p{
+        text-align: left;
+        padding-left:10px ;
+    }
+    
+    section{
+        margin: 0px;
+    }
+
+    .key-benefits-list {
+        flex-direction: column;
+    }
+    .benefit-content p {
+        text-align: center;
+        padding: 0px 15px 0px 15px;
+    }
+
+    .benefit-content li {
+        text-align: center;
+        padding: 0px 15px 0px 15px;
+    }
+
+    .mobile-nav{
+        display: block;
+        height: 40px;
+    }
+
+    .product-container {
+        flex-direction: column;
+        text-align: center;
+        padding: none;
+        margin: none;
+    }
+    .product-section {
+        max-width: 1200px;
+        margin: 0px auto;
+        padding:10px 10px 10px 10px;
+    }
+    
+    .product-image {
+        margin-bottom: 20px;
+    }
+
+    .product-info {
+      padding: 0px;
+      margin-left: 0;
+    }
+
+    .product-info h3 {
+        text-align: center;
+    }
+
+    /* Mission */
+    .mission-section {
+      flex-direction: column-reverse;
+      padding: 40px ;
+    }
+  
+    .mission-text, .mission-image {
+      margin:0px ;
+      padding: 0px;
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .mission-text h2 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+    .mission-text p {
+      font-size: 0.9rem;
+      
+    }
+  
+    
+    
+}
+
+
+
+
+
+
+#toggle {
+    display: block;
+    width: 28px;
+    height: 30px;
+    margin: 30px auto 10px;
+  }
+  
+  #toggle span:after,
+  #toggle span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -9px;
+  }
+  #toggle span:after{
+    top: 9px;
+  }
+  #toggle span {
+    position: relative;
+    display: block;
+  }
+  
+  #toggle span,
+  #toggle span:after,
+  #toggle span:before {
+    width: 100%;
+    height: 5px;
+    background-color: #888;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    border-radius: 2px;
+  }
+  
+  /* on activation */
+  #toggle.on span {
+    background-color: transparent;
+  }
+  #toggle.on span:before {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  #toggle.on span:after {
+    transform: rotate(-45deg) translate(7px, -8px);
+  }
+  #toggle.on + #menu {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* menu appearance*/
+  #menu {
+    position: relative;
+    color: #999;
+    width: 200px;
+    padding: 10px;
+    margin: auto;
+    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    text-align: center;
+    border-radius: 4px;
+    background: white;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.05);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .4s;
+  }
+  #menu:after {
+    position: absolute;
+    top: -15px;
+    left: 95px;
+    content: "";
+    display: block;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid white;
+  }
+  ul, li, li a {
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  li a {
+    padding: 5px;
+    color: #888;
+    text-decoration: none;
+    transition: all .2s;
+  }
+  li a:hover,
+  li a:focus {
+    background: #153f56;;
+    color: #fff;
+  }
+
+
+  .container-key {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .benefit {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 30px 60px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .benefit.reverse {
+    background-color: #f3f3f3;
+  }
+  
+  .benefit-content h3 {
+    font-size: 1.5rem;
+    margin:10px 10px;
+  }
+  
+  .benefit-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .benefit {
+      padding: 30px;
+    }
+  
+    .benefit-content h3 {
+      font-size: 1.2rem;
+    }
+  
+    .benefit-content p {
+      font-size: 0.95rem;
+    }
+  }
+
+
+
+
+/* Supplement Facts Section */
+.supplement-facts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+
+
+
+
+.supplement-details {
+  flex: 2 1 600px;
+  max-width: 600px;
+}
+
+/* Supplement Facts Table */
+.facts-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.facts-table th, .facts-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.facts-table th {
+  background-color: #f7f7f7;
+  font-weight: bold;
+}
+
+h2, h3 {
+  color: #333;
+  margin-top: 20px;
+}
+
+ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .supplement-facts {
+      flex-direction: column;
+      align-items: center;
+  }
+
+
+
+  .supplement-details {
+      width: 100%;
+  }
+
+  .facts-table th, .facts-table td {
+      padding: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+
+  .supplement-facts {
+      padding: 15px;
+  }
+
+  .facts-table th, .facts-table td {
+      font-size: 14px;
+      padding: 8px;
+  }
+
+  h2 {
+      font-size: 24px;
+  }
+
+  h3 {
+      font-size: 20px;
+  }
+
+  ul {
+      padding-left: 15px;
+  }
+}
+
+
