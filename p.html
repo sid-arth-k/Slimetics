@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Section</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .product-section {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    .product {
+      display: flex;
+      max-width: 1200px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-image-container {
+      flex: 1 1 50%;
+      text-align: center;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    .product-image {
+      max-width: 60%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .product-details {
+      flex: 1 1 50%;
+      padding: 20px;
+    }
+
+    .product-title {
+      font-size: 1.5rem;
+      margin: 0 0 10px;
+    }
+
+    .product-description {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .product-price {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .buy-now-btn {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+    }
+
+    .buy-now-btn:hover {
+      background-color: #0056b3;
+    }
+
+    .quantity-options label {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .product {
+        flex-direction: column;
+      }
+      .product-details{
+        padding-left: 50px;
+      }
+      
+    }
+  </style>
+</head>
+<body>
+  <section class="product-section">
+    <div class="product">
+      <div class="product-image-container">
+        <img src="assets/images/1bottle.png" alt="Product Image" class="product-image" id="product-image">
+      </div>
+      <div class="product-details">
+        <h2 class="product-title">Product Name</h2>
+        <p class="product-description">This is a brief description of the product highlighting its features.</p>
+        <p class="product-price" id="product-price">$69.00</p>
+        <div class="quantity-options">
+          <label>
+            <input type="radio" name="quantity" value="1" checked> 1 Bottle
+          </label>
+          <label>
+            <input type="radio" name="quantity" value="3"> 3 Bottles
+          </label>
+          <label>
+            <input type="radio" name="quantity" value="6"> 6 Bottles
+          </label>
+        </div>
+        <button class="buy-now-btn" id="buy-now-btn">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const productPriceElement = document.getElementById("product-price");
+      const productImageElement = document.getElementById("product-image");
+      const quantityOptions = document.querySelectorAll("input[name='quantity']");
+      const buyNowButton = document.getElementById("buy-now-btn");
+
+      const priceMapping = {
+        1: "$69.00",
+        3: "$177.00",
+        6: "$294.00"
+      };
+
+      const imageMapping = {
+        1: "assets/images/1bottle.png",
+        3: "assets/images/3bottle.png",
+        6: "assets/images/3bottle.png"
+      };
+
+      quantityOptions.forEach(option => {
+        option.addEventListener("change", () => {
+          const selectedQuantity = option.value;
+          productPriceElement.textContent = priceMapping[selectedQuantity];
+          productImageElement.src = imageMapping[selectedQuantity];
+        });
+      });
+
+      buyNowButton.addEventListener("click", () => {
+        const selectedQuantity = Array.from(quantityOptions).find(option => option.checked).value;
+        const selectedPrice = priceMapping[selectedQuantity];
+
+        // Simulate sending data to a payment gateway
+        alert(`Redirecting to payment gateway. Quantity: ${selectedQuantity} bottle(s), Price: ${selectedPrice}`);
+
+        // Example of redirecting to a payment URL (replace with your payment URL)
+        window.location.href = `https://yourpaymentgateway.com/checkout?quantity=${selectedQuantity}&price=${selectedPrice}`;
+      });
+    });
+  </script>
+</body>
+</html>

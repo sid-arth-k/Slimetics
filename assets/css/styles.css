@@ -12,7 +12,7 @@ body {
     margin: 0 auto;
 }
 
-img {
+ img {
     max-width: 100%;
     display: block;
 }
@@ -301,7 +301,8 @@ section {
         align-items: center; 
     }
 
-    .hero{
+    .hero {
+        background: url('../images/Hero-mobile.png') center/cover no-repeat;
         padding: 50px;
         margin: 0px;
     }
@@ -457,7 +458,6 @@ section {
     width: 200px;
     padding: 10px;
     margin: auto;
-    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
     text-align: center;
     border-radius: 4px;
     background: white;
@@ -594,7 +594,7 @@ h2, h3 {
 }
 
 ul {
-  padding-left: 20px;
+  padding-left: 0px;
   list-style-type: disc;
 }
 
@@ -639,10 +639,9 @@ ul li {
   h3 {
       font-size: 20px;
   }
-
+/* 
   ul {
       padding-left: 15px;
-  }
+  } */
 }
-
 
