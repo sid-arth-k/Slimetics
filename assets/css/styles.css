@@ -302,7 +302,7 @@ section {
     }
 
     .hero {
-        background: url('../images/Hero-mobile.png') center/cover no-repeat;
+        background: url('../images/Hero1.jpg') left/cover no-repeat;
         padding: 50px;
         margin: 0px;
     }
