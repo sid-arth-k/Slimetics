@@ -179,7 +179,7 @@ section {
 
 .product-info p {
   font-size: 1rem;
-  text-align: left;
+  text-align: justify;
   line-height: 1.6;
   margin-bottom: 20px;
   color: #555;
@@ -320,8 +320,8 @@ section {
     }
 
     p{
-        text-align: left;
-        padding-left:10px ;
+        text-align: justify;
+        padding :10px ;
     }
     
     section{
@@ -346,6 +346,10 @@ section {
         height: 40px;
     }
 
+    
+    .product-container-1{
+      padding: 30px;
+    }
     .product-container {
         flex-direction: column;
         text-align: center;
