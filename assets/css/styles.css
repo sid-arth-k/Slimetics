@@ -110,7 +110,7 @@ section {
     background-color: #ecc2ac;
 }
 
-#key-benefitssec{
+#ingredients{
     background: #ee9ca7;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -131,15 +131,14 @@ section {
     max-width: 200px;
 }
 
-.product-section {
-    background-color: #ecc2ac;
-}
 
 /* Container for the product section */
+
 .product-section {
     margin: 0px 50px;
     padding : 0px 50px;
     padding-bottom: 50px;
+    background-color: #ecc2ac;
 }
 
 .product-container {
@@ -202,6 +201,66 @@ section {
   background-color: #0056b3;
 }
 
+
+/* ingredient */
+
+.ingredients-section{
+  padding: 50px 0;
+}
+
+.ingredients-section h1{
+  padding: 0 100px;
+  font-size: 2rem;
+  color: #000000;;
+}
+
+.ingredient-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px 150px;
+}
+
+.ingredients-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px 150px;
+}
+
+.ingredient-text {
+  flex: 1;
+  padding:0 20px;
+}
+
+.ingredient-text h2 {
+  font-size: 1.5rem;
+  color: #000000;
+  text-align: left;
+}
+
+.ingredient-text p {
+  font-size: 1rem;
+  text-align: justify;
+  color: #333;
+  line-height: 1.6;
+}
+
+.ingredient-image {
+  max-width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+.ingredient-image img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 /* Mission section */
 .mission-section {
   display: flex;
@@ -234,6 +293,7 @@ section {
 .mission-image {
   flex: 1;
   max-width: 40%;
+  height: auto;
   text-align: center;
   padding: 20px;
 }
@@ -289,6 +349,37 @@ section {
     display: none;
 }
 
+
+
+@media (max-width: 1200px){
+  .hero{
+    margin: 0;
+  }
+  #our-approach{
+    margin: 0;
+  }
+  #product{
+    margin: 0;
+  }
+  #ingredients{
+    margin: 0;
+  }
+  #mission{
+    margin: 0;
+  }
+  .ingredient-section{
+    padding: 20px 50px;
+  }
+  .ingredients-reverse{
+    padding: 20px 50px;
+  }
+  #mission{
+    padding: 20px
+  }
+  .product-section{
+    padding: 20px 0;
+  }
+}
 
 @media (max-width: 768px) {
     .nav {
@@ -380,13 +471,20 @@ section {
       flex-direction: column-reverse;
       padding: 40px ;
     }
+
+    .mission-image {
+      max-height: 300px;
+    }
   
     .mission-text, .mission-image {
       margin:0px ;
       padding: 0px;
-      max-width: 100%;
       text-align: center;
     }
+    .mission-image {
+      height: 40%;
+    }
+  
   
     .mission-text h2 {
       font-size: 1.5rem;
@@ -397,9 +495,79 @@ section {
       font-size: 0.9rem;
       
     }
+    /* Ingredients */
+
+    .ingredients-section h1{
+      padding: 10px 30px 0px 30px;
+      font-size: 1.5rem;
+      color: #000000;;
+    }
+    .ingredient-section {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 10px;
+    }
+    
+    .ingredients-reverse {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 10px;
+    }
+    
+    
+    .ingredient-text h2 {
+      font-size: 1rem;
+      color: #000000;
+      padding: 0 10px;
+      text-align: left;
+    }
+    
+    .ingredient-text p {
+      font-size: 1rem;
+      text-align: justify;
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    .ingredient-image {
+      max-width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    .ingredient-image img {
+      width: 400px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 40px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
   
-    
-    
+  
+    .ingredient-text h2 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+    .ingredient-text p {
+      font-size: 0.9rem;
+      
+    }
+
+     
+}
+
+@media (max-width: 480px){
+  .mission-image {
+    padding: 20px;
+    max-width: 100%;
+  }
+
 }
 
 
